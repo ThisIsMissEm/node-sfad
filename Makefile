@@ -4,6 +4,7 @@ all: build
 	
 build:
 	@@echo "Building..."
+	@@mkdir -p bin
 	@@cat lib/cmdline.sh lib/app.js > bin/node-sfad
 	@@chmod +x bin/node-sfad
 	@@echo "Done."
